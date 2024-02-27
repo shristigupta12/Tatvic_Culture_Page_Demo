@@ -44,7 +44,7 @@
                 <p>July 19, 2022</p>
             </div>
             <button class="bg-white text-indigo-900 p-2 rounded-md font-semibold">
-                <a href="https://www.tatvic.com/">Share</a>
+                <a href="https://www.tatvic.com/" id="share-btn">Share</a>
             </button>
         </div>
 
@@ -129,5 +129,11 @@
         </div>
         </div>
     </footer>
+    <script>
+        let errorBtn = document.getElementById("share-btn");
+        errorBtn.onclick = ()=>{
+            throw "404 not found"
+        }
+    </script>
 </body>
 </html>
