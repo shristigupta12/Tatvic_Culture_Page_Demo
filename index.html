@@ -49,7 +49,7 @@
         </div>
 
         <div class="flex items-center ">
-            <form action="" class="flex flex-col gap-5 w-full py-10 px-40">
+            <form action="" id="form-id" class="flex flex-col gap-5 w-full py-10 px-40">
 
                     <label for="name" class=" flex gap-5 items-center">
                         <p class="text-xl text-indigo-900">First Name:</p>
@@ -129,5 +129,11 @@
         </div>
         </div>
     </footer>
+    <script>
+        var errorBtn = document.getElementsByClassName("error-btn")[0];
+        errorBtn.addEventListener("click", function(){
+            throw new Error("error while connecting ");
+        })  
+    </script>
 </body>
 </html>
